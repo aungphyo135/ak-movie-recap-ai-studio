@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Movie Recap AI Studio</title>
+<style>
+body {
+  margin: 0;
+  background: #090d18;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+h1 { color: #54d6ff; text-align: center; }
+.card {
+  background: #151d30;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+input, textarea, select, button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 12px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+button {
+  background: #087df5;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+textarea { min-height: 100px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1> AK Movie Recap AI Studio</h1>
+<p style="text-align:center">Your AI Movie Recap Studio</p>
+
+<div class="card">
+<h3> Movie Input</h3>
+<label>Movie Link</label>
+<input type="url" placeholder="Paste Movie URL">
+
+<label>Or Upload Video</label>
+<input type="file" accept="video/*">
+
+<label>Language</label>
+<select>
+<option>Myanmar (မြန်မာ)</option>
+<option>English</option>
+</select>
+
+<label>AI Voice</label>
+<select>
+<option>Male Voice</option>
+<option>Female Voice</option>
+</select>
+
+<button onclick="alert('AI connection will be added next!')">
+Generate Movie Recap
+</button>
+</div>
+
+<div class="card">
+<h3> Movie Recap Script</h3>
+<textarea placeholder="Your movie recap script will appear here..."></textarea>
+</div>
+</div>
+</body>
+</html>
